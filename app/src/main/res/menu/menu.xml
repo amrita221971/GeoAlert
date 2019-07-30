@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+            android:id="@+id/menuCreateGeofence"
+            android:title="Create Geofence"
+            />
+        <item
+            android:id="@+id/menuDestroyGeofence"
+            android:title="Destroy Geofence"
+            />
+        <!--<item-->
+            <!--android:id="@+id/menuStart"-->
+            <!--android:title="Start tracking"-->
+            <!--/>-->
+        <!--<item-->
+            <!--android:id="@+id/menuStop"-->
+            <!--android:title="Stop tracking"-->
+            <!--/>-->
+
+
+</menu>

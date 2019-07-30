@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        app:title="@string/app_name"
+        app:titleTextColor="#ffff"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="25sp"
+        android:id="@+id/searchEditText"
+        android:textSize="15sp"
+        android:hint="Search location"
+        android:background="#38000000"
+        />
+
+    <Button
+        android:layout_width="55sp"
+        android:layout_height="25sp"
+        android:id="@+id/searchButton"
+        android:layout_below="@+id/toolbar"
+        android:layout_toRightOf="@+id/searchEditText"
+        android:background="@color/colorPrimary"
+        android:text="search"
+        android:onClick="findOnMap"
+        android:elevation="8dp"
+
+        android:textColor="#ffff"
+        />
+    <fragment
+
+        android:id="@+id/googlemap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searchEditText"
+
+         />
+</RelativeLayout>
